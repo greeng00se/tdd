@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "to learn Test-Driven Developement",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@types/jest": "^27.0.2",
     "jest": "^27.2.5"
   },
-  "devDependencies": {},
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
