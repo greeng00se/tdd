@@ -1,0 +1,23 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "to learn Test-Driven Developement",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^27.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greeng00se/TDD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greeng00se/TDD/issues"
+  },
+  "homepage": "https://github.com/greeng00se/TDD#readme"
+}
