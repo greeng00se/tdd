@@ -1,29 +1,49 @@
+
 # TDD
 
-환경설정
-npm init -y
-# jest를 설치하면 babel-jest가 자동 설치된다.
-npm install -D jest @types/jest @babel/core @babel/preset-env
+Learn Test-Driven Development: By Example
 
-babel.config.json
-{
-  "presets": ["@babel/preset-env"]
-}
+## Settings with Jest
 
-jest.config.json
-{
-  "collectCoverage": true,
-  "moduleFileExtensions": ["js", "mjs"],
-  "transform": {
-    "^.+\\.js$": "babel-jest",
-    "^.+\\.mjs$": "babel-jest"
-  },
-  "testRegex": "((\\.|/*.)(test))\\.js?$"
-}
+- install jest with babel
+	```sh
+	npm init -y
+	npm install -D jest @types/jest @babel/core @babel/preset-env
+	```
 
-package.json
-{
-	"scripts": {
-		"test": "jest"
-	},
-}
+- babel.config.json
+	```sh
+	{
+	  "presets": ["@babel/preset-env"]
+	}
+	```
+
+- jest.config.json
+	```sh
+	{
+	  "collectCoverage": true,
+	  "moduleFileExtensions": ["js", "mjs"],
+	  "transform": {
+	    "^.+\\.js$": "babel-jest",
+	    "^.+\\.mjs$": "babel-jest"
+	  },
+	  "testRegex": "((\\.|/*.)(test))\\.js?$"
+	}
+	```
+
+- package.json
+	```sh
+	{
+		"scripts": {
+			"test": "jest"
+		},
+	}
+	```
+
+## Run
+
+- Run all test suites
+	```sh
+	npm test
+	```
+
