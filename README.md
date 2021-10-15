@@ -34,8 +34,8 @@ Learn Test-Driven Development: By Example
 - package.json
 	```sh
 	{
-		"scripts": {
-			"test": "jest"
+	  "scripts": {
+	    "test": "jest"
 		},
 	}
 	```
