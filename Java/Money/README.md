@@ -7,7 +7,6 @@
 -   Equal object
 -   Dollar/Won 중복
 -   공용 times
--   통화?
 -   testWonMultiplication을 지워야 할까?
 
 ### Done.
@@ -19,3 +18,4 @@
 -   ~~ch05 5000원 x 2 = 10000원~~
 -   ~~ch06 공용 equals~~
 -   ~~ch07 Won과 Dollar 비교하기~~
+-   ~~ch09 통화?~~

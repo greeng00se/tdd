@@ -1,11 +1,17 @@
 package Money;
 
 class Won extends Money {
-    Won(int amount) {
-        this.amount = amount;
+    private String currency;
+
+    Won(int amount, String currency) {
+        super(amount, currency);
     }
 
     Money times(int multiplier) {
-        return new Won(amount * multiplier);
+        return Money.won(amount * multiplier);
+    }
+
+    String currency() {
+        return "KRW";
     }
 }
