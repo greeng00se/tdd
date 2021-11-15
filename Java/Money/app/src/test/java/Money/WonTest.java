@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 public class WonTest {
     @Test
     public void testWonMultiplication() {
-        Dollar five = new Dollar(5);
-        assertEquals(new Dollar(10), five.times(2));
-        assertEquals(new Dollar(15), five.times(3));
+        Won fiveThousand  = new Won(5000);
+        assertEquals(new Won(10000), fiveThousand.times(2));
+        assertEquals(new Won(15000), fiveThousand.times(3));
     }
 }
