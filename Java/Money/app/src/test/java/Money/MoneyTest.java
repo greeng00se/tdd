@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 public class MoneyTest {
     @Test
     public void testEquality() {
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
-        assertFalse(new Dollar(5).equals(new Dollar(6)));
-        assertTrue(new Won(5000).equals(new Won(5000)));
-        assertFalse(new Won(5000).equals(new Won(6000)));
-        assertFalse(new Won(5).equals(new Dollar(5)));
+        assertTrue(Money.dollar(5).equals(Money.dollar(5)));
+        assertFalse(Money.dollar(5).equals(Money.dollar(6)));
+        assertTrue(Money.won(5000).equals(Money.won(5000)));
+        assertFalse(Money.won(5000).equals(Money.won(6000)));
+        assertFalse(Money.won(5).equals(Money.dollar(5)));
     }
 }
