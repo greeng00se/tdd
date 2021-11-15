@@ -7,6 +7,7 @@
 - Equal object
 - Dollar/Won 중복
 - 공용 times
+- 통화?
 
 ### Done.
 - ~~ch01 $5 x 2 = $10~~
@@ -15,3 +16,4 @@
 - ~~ch04 amount를 private으로 만들기~~
 - ~~ch05 5000원 x 2 = 10000원~~
 - ~~ch06 공용 equals~~
+- ~~ch07 Won과 Dollar 비교하기~~
