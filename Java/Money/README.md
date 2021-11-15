@@ -6,7 +6,6 @@
 - Equal null
 - Equal object
 - Dollar/Won 중복
-- 공용 equals
 - 공용 times
 
 ### Done.
@@ -15,3 +14,4 @@
 - ~~ch03 equals()~~
 - ~~ch04 amount를 private으로 만들기~~
 - ~~ch05 5000원 x 2 = 10000원~~
+- ~~ch06 공용 equals~~

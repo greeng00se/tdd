@@ -1,8 +1,8 @@
 package Money;
 
-import Money.Won;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,5 +12,11 @@ public class WonTest {
         Won fiveThousand  = new Won(5000);
         assertEquals(new Won(10000), fiveThousand.times(2));
         assertEquals(new Won(15000), fiveThousand.times(3));
+    }
+
+    @Test
+    public void testWonEquality() {
+        assertTrue(new Won(5000).equals(new Won(5000)));
+        assertFalse(new Won(5000).equals(new Won(6000)));
     }
 }
