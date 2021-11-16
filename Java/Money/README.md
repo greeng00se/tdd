@@ -1,10 +1,7 @@
 ### 요구사항
 
 - $5 + 5000원 = $10 (환율이 1:1000일 경우)
-- Money 반올림?
-- hashCode()
-- Equal null
-- Equal object
+- $5 + $5 = $10
 
 ### Done.
 
