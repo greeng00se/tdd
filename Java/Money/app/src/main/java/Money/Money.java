@@ -31,7 +31,8 @@ class Money implements Expression {
     }
 
     public Money reduce(String to) {
-        return this;
+        int rate = (currency.equals("KRW") && to.equals("USD")) ? 1000 : 1;
+        return new Money(amount / rate, to);
     }
 
     String currency() {
