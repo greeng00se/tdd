@@ -21,4 +21,9 @@ public class MoneyTest {
         assertEquals("USD", Money.dollar(1).currency());
         assertEquals("KRW", Money.won(1).currency());
     }
+
+    @Test
+    public void testDifferentClasssEquality() {
+        assertTrue(new Money(10, "KRW").equals(new Won(10, "KRW")));
+    }
 }

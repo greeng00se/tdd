@@ -7,10 +7,6 @@ class Won extends Money {
         super(amount, currency);
     }
 
-    Money times(int multiplier) {
-        return Money.won(amount * multiplier);
-    }
-
     String currency() {
         return "KRW";
     }
