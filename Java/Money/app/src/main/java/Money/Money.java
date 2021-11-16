@@ -9,16 +9,16 @@ class Money {
         this.currency = currency;
     }
 
-    Money times(int multiplier) {
-        return new Money(amount * multiplier, currency);
-    }
-
     static Money dollar(int amount) {
-        return new Dollar(amount, "USD");
+        return new Money(amount, "USD");
     }
 
     static Money won(int amount) {
-        return new Won(amount, "KRW");
+        return new Money(amount, "KRW");
+    }
+
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 
     public boolean equals(Object object) {

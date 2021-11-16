@@ -5,8 +5,6 @@
 - hashCode()
 - Equal null
 - Equal object
-- Dollar/Won 중복
-- testWonMultiplication을 지워야 할까?
 
 ### Done.
 
@@ -19,3 +17,5 @@
 - ~~ch07 Won과 Dollar 비교하기~~
 - ~~ch09 통화?~~
 - ~~ch10 공용 times~~
+- ~~ch11 Dollar/Won 중복~~
+- ~~ch11 testWonMultiplication 제거~~
