@@ -22,12 +22,16 @@ class Money implements Expression {
     }
 
     Expression plus(Money addend) {
-        return new Money(amount + addend.amount, currency);
+        return new Sum(this, addend);
     }
 
     public boolean equals(Object object) {
         Money money = (Money) object;
         return amount == money.amount && currency().equals(money.currency());
+    }
+
+    public Money reduce(String to) {
+        return this;
     }
 
     String currency() {

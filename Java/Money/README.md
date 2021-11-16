@@ -2,6 +2,9 @@
 
 - $5 + 5000원 = $10 (환율이 1:1000일 경우)
 - $5 + $5 = $10
+- $5 + $5에서 Money 반환하기
+- Money에 대한 토오하 변환을 수행하는 Reduce
+- Reduce(Bank, String)
 
 ### Done.
 
@@ -16,3 +19,4 @@
 - ~~ch10 공용 times~~
 - ~~ch11 Dollar/Won 중복~~
 - ~~ch11 testWonMultiplication 제거~~
+- ~~ch12 Bank.reduce(Money)~~
