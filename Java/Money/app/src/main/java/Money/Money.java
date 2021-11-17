@@ -30,8 +30,8 @@ class Money implements Expression {
         return amount == money.amount && currency().equals(money.currency());
     }
 
-    public Money reduce(String to) {
-        int rate = (currency.equals("KRW") && to.equals("USD")) ? 1000 : 1;
+    public Money reduce(Bank bank, String to) {
+        int rate = bank.rate(currency, to);
         return new Money(amount / rate, to);
     }
 

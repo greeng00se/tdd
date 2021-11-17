@@ -56,7 +56,7 @@ public class MoneyTest {
     @Test
     public void testReduceMoneyDifferentCurrency() {
         Bank bank = new Bank();
-        // bank.addRate("KRW", "USD", 1000);
+        bank.addRate("KRW", "USD", 1000);
         Money result = bank.reduce(Money.won(1000), "USD");
         assertEquals(Money.dollar(1), result);
     }
