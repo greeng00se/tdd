@@ -1,9 +1,3 @@
-### 요구사항
-
-- $5 + $5에서 Money 반환하기
-- Sum.plus
-- Expression.times
-
 ### Done.
 
 - ~~ch01 $5 x 2 = $10~~
@@ -22,3 +16,6 @@
 - ~~ch14 Money에 대한 통화 변환을 수행하는 Reduce~~
 - ~~ch14 Reduce(Bank, String)~~
 - ~~ch15 $5 + 5000원 = $10 (환율이 1:1000일 경우)~~
+- ~~ch16 Sum.plus~~
+- ~~ch16 Expression.times~~
+- ~~ch16 $5 + $5에서 Money 반환하기~~
