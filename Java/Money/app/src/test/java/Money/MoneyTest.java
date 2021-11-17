@@ -66,8 +66,8 @@ public class MoneyTest {
 
     @Test
     public void testMixedAddition() {
-        Money fiveBucks = Money.dollar(5);
-        Money fiveThousandWons = Money.won(5000);
+        Expression fiveBucks = Money.dollar(5);
+        Expression fiveThousandWons = Money.won(5000);
         Bank bank = new Bank();
         bank.addRate("KRW", "USD", 1000);
         Money result = bank.reduce(fiveBucks.plus(fiveThousandWons), "USD");
