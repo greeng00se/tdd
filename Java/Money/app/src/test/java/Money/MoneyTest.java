@@ -1,6 +1,9 @@
 package Money;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import com.google.common.collect.ForwardingNavigableMap;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -59,5 +62,15 @@ public class MoneyTest {
         bank.addRate("KRW", "USD", 1000);
         Money result = bank.reduce(Money.won(1000), "USD");
         assertEquals(Money.dollar(1), result);
+    }
+
+    @Test
+    public void testMixedAddition() {
+        Money fiveBucks = Money.dollar(5);
+        Money fiveThousandWons = Money.won(5000);
+        Bank bank = new Bank();
+        bank.addRate("KRW", "USD", 1000);
+        Money result = bank.reduce(fiveBucks.plus(fiveThousandWons), "USD");
+        assertEquals(Money.dollar(10), result);
     }
 }
