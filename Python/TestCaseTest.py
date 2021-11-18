@@ -14,3 +14,4 @@ class TestCaseTest(TestCase):
         assert(self.test.wasSetUp)
 
 TestCaseTest("testRunning").run()
+TestCaseTest("testSetUp").run()
