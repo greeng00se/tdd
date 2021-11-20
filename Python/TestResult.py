@@ -10,4 +10,4 @@ class TestResult:
         self.failureCount += 1
         
     def summary(self):
-        return f"{self.runCount} run, {self.failedCount} failed"
+        return f"{self.runCount} run, {self.failureCount} failed"
